@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    tools:context="com.northmeter.wartermeterdemo.activity.PrintActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_print"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:layout_marginTop="36px"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:id="@+id/tv_print"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text="蓝牙"
+            android:textColor="#000"
+            android:textSize="40px" />
+
+        <ToggleButton
+            android:id="@+id/tb_print"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:button="@drawable/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textOn=""
+            android:textOff=""
+             />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56px"
+        android:text="    默认连接设备"
+        android:textColor="#000"
+        android:textSize="30px" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="96px">
+        <TextView
+            android:id="@+id/tv_connect"
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:layout_marginLeft="20px"
+            android:gravity="center_vertical"
+            android:text="NP100S00AB"
+            android:textStyle="bold"
+            android:textColor="#767574"
+            android:textSize="40px" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="56px"
+        android:id="@+id/tvShow_print"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:padding="10px"
+        android:text="   可用设备"
+        android:textColor="#000"/>
+    <ListView
+        android:id="@+id/lv_bond_print"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1_print" />
+</LinearLayout>

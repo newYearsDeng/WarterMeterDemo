@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_flash_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.northmeter.wartermeterdemo.activity.FlashActivity">
+    <ImageView
+        android:id="@+id/iv_ad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="180px"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+    <com.northmeter.wartermeterdemo.view.RoudProgressBar
+        android:id="@+id/rpb"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="40px"
+        app:roundWidth="4px"
+        app:textSize="35px"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:visibility="gone"/>
+</RelativeLayout>

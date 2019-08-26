@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_all_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_resistance="3.0"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/iv_search_all_msg_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/task_empty_data"
+                android:visibility="gone"
+                />
+
+
+            <ExpandableListView
+                android:id="@+id/elv_search_all_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ExpandableListView>
+        </FrameLayout>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</LinearLayout>

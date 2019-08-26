@@ -1,0 +1,135 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_My</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme" parent="@style/BaseAppTheme"/>
+
+    <style name="MyAppTheme" parent="android:style/Theme.Black.NoTitleBar.Fullscreen" type="text/css">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <style name="setting_text_style">
+        <item name="android:textColor">#fff</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="setting_text2_style">
+        <item name="android:textSize">30px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">40px</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+    <!--ViewPagerIndicator-->
+    <style name="MyTheme.PageIndicatorDefaults" parent="MyWidget">
+    <!--<style name="MyTheme.PageIndicatorDefaults" parent="@style/AppTheme">-->
+       <!-- <item name="vpiTabPageIndicatorStyle">@style/MyWidget.TabPageIndicator</item>-->
+    </style>
+
+    <style name="MyWidget" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="MyWidget.TabPageIndicator" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:paddingTop">12px</item>
+        <item name="android:paddingBottom">12px</item>
+        <item name="android:textAppearance">@style/MyTextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">@dimen/font_size_26</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="MyTextAppearance.TabPageIndicator" parent="MyWidget">
+        <item name="android:textColor">@color/dark_theme</item>
+    </style>
+
+    <style name="tablayout_text_apperance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <!--二维码-->
+    <style name="common_title_IV_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dip</item>
+    </style>
+
+    <style name="common_title_TV_center">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="common_title_TV_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/ic_but_bg</item>
+        <item name="android:layout_marginRight">7dp</item>
+    </style>
+
+    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <declare-styleable name="CircularProgressButton">
+        <attr name="cpb_selectorIdle" format="reference"/>
+        <attr name="cpb_selectorComplete" format="reference"/>
+        <attr name="cpb_selectorError" format="reference"/>
+        <attr name="cpb_textComplete" format="string"/>
+        <attr name="cpb_textIdle" format="string"/>
+        <attr name="cpb_textError" format="string"/>
+        <attr name="cpb_textProgress" format="string"/>
+        <attr name="cpb_colorProgress" format="color"/>
+        <attr name="cpb_colorIndicator" format="color"/>
+        <attr name="cpb_colorIndicatorBackground" format="color"/>
+        <attr name="cpb_iconError" format="reference"/>
+        <attr name="cpb_iconComplete" format="reference"/>
+        <attr name="cpb_cornerRadius" format="dimension"/>
+        <attr name="cpb_paddingProgress" format="dimension"/>
+    </declare-styleable>
+    <style name="StartAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="19">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/layout_list_start_pic</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- 自定义loading dialog -->
+    <style name="loading_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+     <!--pop动画-->
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/pop_fadein</item>
+        <item name="android:windowExitAnimation">@anim/pop_fadeout</item>
+    </style>
+
+</resources>

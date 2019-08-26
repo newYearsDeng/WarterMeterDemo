@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cropper_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:visibility="gone">
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+    <RelativeLayout
+        android:id="@+id/rl_afterPhoto_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:padding="24px">
+        <ImageButton
+            android:id="@+id/ib_cancel"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_cancle_selector"
+            android:padding="10px" />
+        <ImageButton
+            android:id="@+id/ib_save"
+            android:layout_width="65px"
+            android:layout_height="65px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_ok_selector"
+            android:padding="10px" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_afterPhoto_controller"
+        android:layout_centerHorizontal="true"
+        android:text="请确认水表信息清晰\n"
+        android:textColor="#00ff6f"
+        android:textSize="20dp" />
+</RelativeLayout>

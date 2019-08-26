@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+
+   >
+    <ImageView
+        android:id="@+id/iv_dialog_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher"/>
+    <Button
+        android:id="@+id/btn_photoAgain_dialog_pic"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="34px"
+        android:layout_height="98px"
+        android:text="重拍"
+        android:textColor="#fff"
+        android:textSize="40px"
+        android:background="#E2635B"
+        android:layout_gravity="center_horizontal"/>
+</RelativeLayout>

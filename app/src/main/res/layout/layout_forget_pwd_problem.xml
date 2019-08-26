@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_forget_pwd_problem_and_answer"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+              <!--android:visibility="gone"-->
+
+    <!--验证密保-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="26px"
+        android:paddingTop="35px"
+        android:text="验证密保"
+        android:textColor="#77000000"
+        android:textSize="28px"/>
+
+    <!--密保问题和答案-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:background="@drawable/shape_task_edit_text_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_forget_pwd_problem_bg"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="5px"
+            android:background="@drawable/selector_regist_problem_bg"
+            >
+
+            <TextView
+                android:id="@+id/tv_forget_pwd_problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24px"
+                android:hint="请选择密保问题"
+                android:textSize="32px"/>
+
+            <ImageView
+                android:layout_width="18px"
+                android:layout_height="33px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="48px"
+                android:background="@drawable/right_arrow"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="#55000000"
+            />
+
+        <EditText
+            android:id="@+id/et_forget_pwd_answer"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="@null"
+            android:hint="密保答案"
+            android:maxLength="32"
+            android:singleLine="true"
+            android:textSize="30px"/>
+    </LinearLayout>
+
+    <!--设置密码-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="26px"
+        android:paddingTop="35px"
+        android:text="重置密码"
+        android:textColor="#77000000"
+        android:textSize="28px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:background="@drawable/shape_task_edit_text_bg"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_forget_pwd_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:layout_marginLeft="24px"
+            android:background="@null"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            android:maxLength="32"
+            android:singleLine="true"
+            android:textSize="30px"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="#55000000"
+            />
+
+        <EditText
+            android:id="@+id/et_forget_pwd_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:layout_marginLeft="24px"
+            android:background="@null"
+            android:hint="确认新密码"
+            android:inputType="textPassword"
+            android:maxLength="32"
+            android:singleLine="true"
+            android:textSize="30px"/>
+    </LinearLayout>
+
+</LinearLayout>

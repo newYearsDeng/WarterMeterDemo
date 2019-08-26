@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#efefef"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="24px"
+        android:background="@drawable/shape_task_edit_text_bg"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:layout_marginLeft="34px">
+
+            <TextView
+                android:layout_width="180px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="用户名称"
+                android:textColor="#000"
+                android:textSize="30px"/>
+
+            <TextView
+                android:id="@+id/tv_user_warter_message_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="54px"
+                android:textColor="#000"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#33000000"/>
+
+        <!--用户号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:layout_marginLeft="34px">
+
+            <TextView
+                android:layout_width="180px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="用户编号"
+                android:textColor="#000"
+                android:textSize="30px"/>
+
+            <TextView
+                android:id="@+id/tv_use_warter_message_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="54px"
+                android:textColor="#000"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#33000000"/>
+
+        <!--地址-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:layout_marginLeft="34px">
+
+            <TextView
+                android:layout_width="180px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="用户地址"
+                android:textColor="#000"
+                android:textSize="30px"/>
+
+            <TextView
+                android:id="@+id/tv_use_warter_message_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="54px"
+                android:textColor="#000"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2px"-->
+        <!--android:background="#33000000"/>-->
+
+        <!--门牌号-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="96px"-->
+        <!--android:layout_marginLeft="34px">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="180px"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="门牌号"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="30px"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_use_warter_message_house_number"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="54px"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="30px"/>-->
+        <!--</LinearLayout>-->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#33000000"/>
+
+        <!--上月用水止码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:layout_marginLeft="34px">
+
+            <TextView
+                android:layout_width="180px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="上月抄表数"
+                android:textColor="#000"
+                android:textSize="30px"/>
+
+            <TextView
+                android:id="@+id/tv_use_warter_message_last_month_warter_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="54px"
+                android:textColor="#000"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#33000000"/>
+
+        <!--本月用水止码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:layout_marginLeft="34px">
+
+            <TextView
+                android:layout_width="180px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="本月抄表数"
+                android:textColor="#000"
+                android:textSize="30px"/>
+
+            <TextView
+                android:id="@+id/tv_use_warter_message_this_month_warter_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="54px"
+                android:textColor="#000"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#33000000"/>
+
+        <!--使用量-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:layout_marginLeft="34px">
+
+            <TextView
+                android:layout_width="180px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="本月使用量"
+                android:textColor="#000"
+                android:textSize="30px"/>
+
+            <TextView
+                android:id="@+id/tv_use_warter_message_use_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="54px"
+                android:textColor="#000"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#33000000"/>
+
+        <!--基础单价-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:layout_marginLeft="34px">
+
+            <TextView
+                android:layout_width="180px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="基础水价"
+                android:textColor="#000"
+                android:textSize="30px"/>
+
+            <TextView
+                android:id="@+id/tv_use_warter_message_basis_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="54px"
+                android:textColor="#000"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2px"-->
+        <!--android:background="#33000000"/>-->
+        <!--&lt;!&ndash;阶梯单价&ndash;&gt;-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="96px"-->
+        <!--android:layout_marginLeft="34px">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="180px"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="阶梯水价"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="30px"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_use_warter_message_ladder_price"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="54px"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="30px"/>-->
+        <!--</LinearLayout>-->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#33000000"/>
+
+        <!--应缴费-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:layout_marginLeft="34px">
+
+            <TextView
+                android:layout_width="180px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="应缴水费"
+                android:textColor="#000"
+                android:textSize="30px"/>
+
+            <TextView
+                android:id="@+id/tv_use_warter_message_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="54px"
+                android:textColor="#000"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#33000000"/>
+
+    </LinearLayout>
+    <com.northmeter.wartermeterdemo.view.CircularProgressButton
+        android:id="@+id/btn_use_warter_message_pay"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="30px"
+        android:background="#01B2EB"
+        android:textColor="#fff"
+        android:textSize="40px"
+        app:cpb_cornerRadius="@dimen/dp_size_20"
+        app:cpb_selectorComplete="@drawable/complete_state_selector"
+        app:cpb_selectorError="@drawable/error_state_selector"
+        app:cpb_selectorIdle="@drawable/idle_state_selector"
+        app:cpb_textComplete="成功"
+        app:cpb_textError="缴费失败"
+        app:cpb_textIdle="微信支付"
+        android:visibility="gone"
+       />
+</LinearLayout>

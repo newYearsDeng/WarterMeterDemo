@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.northmeter.wartermeterdemo.activity.PayResultActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="650px"
+        android:layout_height="650px"
+        android:layout_gravity="center"
+        android:layout_marginTop="100px"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:id="@+id/tv_result_pay_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="您已经通过XX收费100元"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_print_pay_result"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="126px"
+        android:background="#E2635B"
+        android:text="打  印"
+        android:textColor="#fff"
+        android:textSize="40px" />
+</LinearLayout>

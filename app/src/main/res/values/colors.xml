@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#43a4ee</color>
+    <color name="colorPrimaryDark">#43a4ee</color>
+    <color name="colorAccent">#43a4ee</color>
+    <color name="colorPrimaryDark_My">#01B2EB</color>
+
+    <color name="title_bar_normal_bg_corlor" >#01b2ed</color>
+    <color name="title_bar_press_bg_color" >#008ebc</color>
+    <color name="captureBackPressColor" >#66000000</color>
+    <color name="title_bar_text_press_color" >#b6b6b5</color>
+    <color name="title_bar_text_normal_color" >#ffffff</color>
+    <color name="regist_problem_bg_press_color" >#11000000</color>
+    <color name="regist_problem_bg_normal_color" >#ffffff</color>
+
+
+    <!--ViewPagerIndicator-->
+    <color name="background_holo_dark">#ff000000</color>
+    <color name="background_holo_light">#fff3f3f3</color>
+    <color name="bright_foreground_holo_dark">#000000</color>
+    <color name="bright_foreground_holo_light">@color/background_holo_dark</color>
+    <color name="bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="bright_foreground_inverse_holo_dark">@color/bright_foreground_holo_light</color>
+    <color name="bright_foreground_inverse_holo_light">@color/bright_foreground_holo_dark</color>
+
+    <!--二维码扫描-->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <!--<color name="viewfinder_laser">#ffcc0000</color> &lt;!&ndash; Android standard ICS color &ndash;&gt;-->
+    <color name="viewfinder_laser">#00ff00</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="vifrification">#01B2EB</color>
+    <color name="dialog_color">#00ffffff</color>
+
+    <color name="cpb_grey">#ffdedede</color>
+    <color name="cpb_blue">#ff0099cc</color>
+    <color name="cpb_blue_dark">#ff00719b</color>
+    <color name="cpb_red">#ffff4444</color>
+    <color name="cpb_red_dark">#ffcd3a3a</color>
+    <color name="cpb_green">#ff99cc00</color>
+    <color name="cpb_green_dark">#ff6d9b00</color>
+    <color name="cpb_white">@android:color/white</color>
+    <color name="item_setting_bg">#b5b5b6</color>
+
+
+</resources>

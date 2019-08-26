@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_item_task_build_user_address_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户号/地址"
+        android:textColor="#000"
+        android:maxLines="1"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_task_build_user_specific"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="需要维修的具体事项"
+        android:maxLines="1"
+        android:textColor="#77000000"
+        android:ellipsize="end"
+        android:textSize="12dp"/>
+</LinearLayout>

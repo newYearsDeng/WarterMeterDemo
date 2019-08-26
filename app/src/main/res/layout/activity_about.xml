@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    tools:context="com.northmeter.wartermeterdemo.activity.AboutActivity">
+    <include layout="@layout/title_bar" />
+    <ImageView
+        android:id="@+id/iv_about"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_below="@+id/rl_title_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150px"
+        android:src="@drawable/big_logo" />
+
+
+    <TextView
+        android:id="@+id/tv_codeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_about"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25px"
+        android:textSize="35px" />
+    <TextView
+        android:id="@+id/tv_clean"
+        android:layout_marginTop="100px"
+        android:layout_below="@+id/tv_codeName"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="清除缓存"
+        android:textSize="35px"
+        android:background="#fff"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tv_company_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30px"
+        android:text="" />
+    <!-- android:text="Copyright @2016 Meteric All Rights Reserved"-->
+</RelativeLayout>

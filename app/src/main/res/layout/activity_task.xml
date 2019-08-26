@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_tasks_multi_choose_state_title"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="#01b2ed"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_multi_cancel"
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@drawable/seletor_title_bar_back_text"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_multi_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_multi_delete"
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@drawable/seletor_title_bar_back_text"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tasks_title"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="#01b2ed">
+        <!--返回-->
+        <LinearLayout
+            android:id="@+id/ll_task_back"
+            android:layout_width="140px"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="25px"
+                android:layout_height="44px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/seletor_title_bar_back_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10px"
+                android:text="返回"
+                android:textColor="@drawable/seletor_title_bar_back_text"
+                android:textSize="32px" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="任务列表"
+            android:textColor="#fff"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+       <TextView
+            android:id="@+id/tv_tasks_scale"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="30px"
+            android:gravity="center"
+            android:textSize="32px"
+            android:textColor="#ffffff"
+            android:text="0/0"
+           />
+    </RelativeLayout>
+    <!--<com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/indicator"
+        style="@style/MyWidget.TabPageIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="80px" />-->
+    <android.support.design.widget.TabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        app:tabIndicatorColor="#01b2ed"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#01b2ed"
+        app:tabTextAppearance="@style/tablayout_text_apperance"
+        app:tabTextColor="#000" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#55000000" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

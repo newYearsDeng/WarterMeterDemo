@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="numText">
+        <attr name="numText_height" format="dimension"></attr>
+        <attr name="numText_width" format="dimension"></attr>
+        <attr name="numText_color" format="color"></attr>
+        <attr name="numText_num" format="string"></attr>
+        <attr name="numText_textSize" format="dimension"></attr>
+    </declare-styleable>
+</resources>
+

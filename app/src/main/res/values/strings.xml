@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">云识水精灵</string>
+    <!--    <string name="app_name">水精灵</string>-->
+    <string name="title_activity_reading">ReadingActivity</string>
+    <!--二维码-->
+    <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="msg_default_status">请将二维码置于屏幕中间\n（若光线暗请按音量的增加键）</string>
+    <dimen name="cpb_stroke_width">4dp</dimen>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="CompanyName">深圳市云识科技有限公司 版权所有</string>
+    <!--权限-->
+    <string name="prompt_request_camara">使用该功能需要开启权限</string>
+    <string name="prompt_we_need_camera">需要前往应用设置去手动开启权限</string>
+
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+</resources>

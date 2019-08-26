@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AnalysisResultActivity_Pop">
+    <include layout="@layout/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100px"/>
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title_bar"
+        android:layout_marginTop="30px">
+        <com.northmeter.wartermeterdemo.view.numViewGroup
+            android:id="@+id/numViewGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="152px"
+            android:gravity="center_vertical" />
+        <include layout="@layout/analysis_result_show" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/relative1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/pv_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15px"
+        android:padding="20px"
+        android:scaleType="fitCenter" />
+    </RelativeLayout>
+    <com.northmeter.wartermeterdemo.view.CircularProgressButton
+        android:id="@+id/btn_upload_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:background="#01B2EB"
+        android:textColor="#fff"
+        android:textSize="40px"
+        android:layout_marginBottom="32px"
+        app:cpb_cornerRadius="@dimen/dp_size_20"
+        app:cpb_selectorComplete="@drawable/complete_state_selector"
+        app:cpb_selectorError="@drawable/error_state_selector"
+        app:cpb_selectorIdle="@drawable/idle_state_selector"
+        app:cpb_textComplete="上传"
+        app:cpb_textError="重新拍照"
+        app:cpb_textIdle="解析" />
+</RelativeLayout>

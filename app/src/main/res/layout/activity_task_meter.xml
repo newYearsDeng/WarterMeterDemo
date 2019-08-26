@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#efefef"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/title_bar"/>
+
+    <!--任务详情-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="440px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/shape_task_edit_text_bg"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_task_meter_id"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginLeft="20px"
+            android:background="@null"
+            android:hint="用户号"
+            android:maxLength="30"
+            android:maxLines="1"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#55000000"/>
+
+        <EditText
+            android:id="@+id/et_task_meter_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="20px"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="任务详情"
+            android:inputType="textMultiLine"/>
+    </LinearLayout>
+
+    <!--反馈内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="440px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/shape_task_edit_text_bg"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_task_meter_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="反馈内容"
+            android:inputType="textMultiLine"
+            android:paddingTop="20px"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="20px"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_task_meter_photo_bg"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:background="@drawable/task_content_bg">
+                <ImageButton
+                    android:id="@+id/ibtn_task_meter_photo"
+                    android:layout_width="66px"
+                    android:layout_height="50px"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/seletor_task_photo"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_task_meter_upload"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:textColor="#fff"
+        android:textSize="38px"
+        android:layout_marginBottom="20px"
+        android:background="@drawable/seletor_builduser_button_upload"
+        android:text="上    传"/>
+
+</LinearLayout>
+</ScrollView>

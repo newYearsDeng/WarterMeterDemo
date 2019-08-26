@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_task_maintain_and_repair"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="#efefef"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar"/>
+
+    <!--任务详情-->
+    <include layout="@layout/task_details"/>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.northmeter.wartermeterdemo.activity.SettingActivity">
+    <include layout="@layout/title_bar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="288px"
+            android:background="@drawable/bg">
+            <com.northmeter.wartermeterdemo.view.CircularImage
+                android:id="@+id/image_head_setting"
+                android:layout_width="130px"
+                android:layout_height="130px"
+                android:layout_below="@+id/rl_title_bar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50px"
+                android:src="@drawable/sethead" />
+            <TextView
+                android:id="@+id/tv_name_setting"
+                style="@style/setting_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="30px"
+                android:layout_below="@+id/image_head_setting"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40px"
+                android:text="暂无登陆"
+                android:textSize="30px" />
+        </RelativeLayout>
+        <ListView
+            android:layout_below="@+id/rl1"
+            android:layout_above="@+id/btn_exit_setting"
+            android:id="@+id/listView_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"/>
+        <com.northmeter.wartermeterdemo.view.CircularProgressButton
+            android:id="@+id/btn_exit_setting"
+            style="@style/setting_text_style"
+            android:layout_width="650px"
+            android:layout_height="98px"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40px"
+            android:background="#01B2EB"
+            android:gravity="center"
+            android:textSize="40px"
+            app:cpb_cornerRadius="@dimen/font_size_20"
+            app:cpb_selectorComplete="@drawable/idle_state_selector"
+            app:cpb_selectorIdle="@drawable/error_state_selector"
+            app:cpb_textComplete="登陆"
+            app:cpb_textIdle="退出登陆" />
+    </RelativeLayout>
+
+
+</LinearLayout>

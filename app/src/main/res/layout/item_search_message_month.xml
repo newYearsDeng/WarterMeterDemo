@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:descendantFocusability="blocksDescendants"
+    >
+
+    <TextView
+        android:id="@+id/tv_item_search_message_use_warter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="17dp"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:text="xxxxx"
+        android:textColor="#000"
+        android:textSize="34px"
+        />
+
+    <ImageButton
+        android:id="@+id/ibtn_search_message_go"
+        android:layout_width="20px"
+        android:layout_height="26px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="34px"
+        android:background="@drawable/item_search_message"/>
+</RelativeLayout>

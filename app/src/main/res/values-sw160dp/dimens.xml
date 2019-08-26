@@ -1,0 +1,76 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">12dp</dimen>
+    <dimen name="activity_vertical_margin">12dp</dimen>
+
+
+    <!-- Common font size -->
+    <dimen name="font_size_9">5sp</dimen>
+    <dimen name="font_size_10">6sp</dimen>
+    <dimen name="font_size_11">7sp</dimen>
+    <dimen name="font_size_12">8sp</dimen>
+    <dimen name="font_size_13">9sp</dimen>
+    <dimen name="font_size_14">10sp</dimen>
+    <dimen name="font_size_15">11sp</dimen>
+    <dimen name="font_size_16">12sp</dimen>
+    <dimen name="font_size_17">13sp</dimen>
+    <dimen name="font_size_18">14sp</dimen>
+    <dimen name="font_size_20">15sp</dimen>
+    <dimen name="font_size_26">20sp</dimen>
+    <dimen name="font_size_36">30sp</dimen>
+
+    <!-- title高度 -->
+    <dimen name="title_bar_height">40dp</dimen>
+
+    <!-- Common dp size -->
+    <dimen name="dp_size_0">0dp</dimen>
+    <dimen name="dp_size_0_5">0.3dp</dimen>
+    <dimen name="dp_size_1">0.8dp</dimen>
+    <dimen name="dp_size_2">1.5dp</dimen>
+    <dimen name="dp_size_3">2dp</dimen>
+    <dimen name="dp_size_5">3dp</dimen>
+    <dimen name="dp_size_6">4dp</dimen>
+    <dimen name="dp_size_8">6dp</dimen>
+    <dimen name="dp_size_9">7dp</dimen>
+    <dimen name="dp_size_10">8dp</dimen>
+    <dimen name="dp_size_12">10dp</dimen>
+    <dimen name="dp_size_15">12dp</dimen>
+    <dimen name="dp_size_16">12dp</dimen>
+    <dimen name="dp_size_17">13dp</dimen>
+    <dimen name="dp_size_20">13dp</dimen>
+    <dimen name="dp_size_25">20dp</dimen>
+    <dimen name="dp_size_30">25dp</dimen>
+    <dimen name="dp_size_40">35dp</dimen>
+    <dimen name="dp_size_45">38dp</dimen>
+    <dimen name="dp_size_50">45dp</dimen>
+    <dimen name="dp_size_60">50dp</dimen>
+    <dimen name="dp_size_70">60dp</dimen>
+    <dimen name="dp_size_80">70dp</dimen>
+    <dimen name="dp_size_85">70dp</dimen>
+    <dimen name="dp_size_100">80dp</dimen>
+    <dimen name="dp_size_120">100dp</dimen>
+    <dimen name="dp_size_130">110dp</dimen>
+    <dimen name="dp_size_150">120dp</dimen>
+    <dimen name="dp_size_200">160dp</dimen>
+    <dimen name="dp_size_28">22dp</dimen>
+    <dimen name="dp_size_36">30dp</dimen>
+
+    <dimen name="dp_size_84">64dp</dimen>
+    <dimen name="dp_size_88">68dp</dimen>
+    <dimen name="dp_size_280">230dp</dimen>
+    <dimen name="dp_size_75">55dp</dimen>
+    <dimen name="dp_size_234">184dp</dimen>
+    <dimen name="dp_size_112">80dp</dimen>
+
+
+    <dimen name="dp_size_242">200dp</dimen>
+    <dimen name="dp_size_65">45dp</dimen>
+    <dimen name="dp_size_81">61dp</dimen>
+    <dimen name="dp_size_219.5">169.5dp</dimen>
+    <dimen name="dp_size_210">160dp</dimen>
+    <dimen name="dp_size_46.5">36.5dp</dimen>
+    <dimen name="dp_size_75.5">55.5dp</dimen>
+    <dimen name="dp_size_300">250dp</dimen>
+
+    <dimen name="dp_size_90">70dp</dimen>
+</resources>

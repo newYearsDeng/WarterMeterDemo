@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+              android:background="#efefef"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2px"-->
+        <!--android:layout_marginTop="24px"-->
+        <!--android:background="#11000000"/>-->
+
+
+
+        <FrameLayout
+            android:id="@+id/fl_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<ListView-->
+                <!--android:id="@+id/listview_search_message"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:visibility="gone"-->
+                <!--/>-->
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_search_data_empty"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:scaleType="center"-->
+                <!--android:src="@drawable/task_empty_data"-->
+                <!--android:visibility="gone"-->
+                <!--/>-->
+        </FrameLayout>
+
+
+
+</LinearLayout>

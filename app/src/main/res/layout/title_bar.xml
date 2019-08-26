@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_title_bar"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:background="#01b2ed">
+
+    <!--返回-->
+    <LinearLayout
+        android:id="@+id/ll_title_bar_back"
+        android:layout_width="140px"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        >
+
+        <ImageView
+            android:layout_width="25px"
+            android:layout_height="44px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24px"
+            android:background="@drawable/seletor_title_bar_back_icon"/>
+
+        <TextView
+            android:id="@+id/tv_title_bar_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10px"
+            android:text="返回"
+            android:textColor="@drawable/seletor_title_bar_back_text"
+            android:textSize="32px"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title_bar_center_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="标题"
+        android:textColor="#fff"
+        android:textSize="40px"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title_bar_right_text"
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@drawable/seletor_title_bar_back_text"
+            android:textSize="32px"/>
+
+        <TextView
+            android:id="@+id/tv_change"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="切换"
+            android:textColor="@drawable/seletor_title_bar_back_text"
+            android:textSize="32px"
+            android:visibility="gone"
+            android:layout_marginRight="10px"
+            />
+    </RelativeLayout>
+</RelativeLayout>

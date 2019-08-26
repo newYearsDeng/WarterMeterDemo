@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="24px"
+              android:layout_marginRight="24px"
+              android:background="@drawable/shape_task_edit_text_bg"
+              android:orientation="vertical">
+
+    <!--问题一-->
+    <RelativeLayout
+        android:id="@+id/rl_regist_problem_one_bg"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:background="@drawable/selector_regist_problem_bg"
+        >
+
+        <TextView
+            android:id="@+id/et_regist_problem_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"
+            android:hint="请选择密保问题一"
+            android:textSize="32px"/>
+
+        <ImageView
+            android:layout_width="18px"
+            android:layout_height="33px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="48px"
+            android:background="@drawable/right_arrow"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:background="#55000000"
+        />
+
+    <EditText
+        android:id="@+id/et_regist_answer_one"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:background="@null"
+        android:hint="密保答案一"
+        android:maxLength="32"
+        android:singleLine="true"
+        android:textSize="30px"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:background="#55000000"
+        />
+
+    <!--问题二-->
+    <RelativeLayout
+        android:id="@+id/rl_regist_problem_two_bg"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="5px"
+        android:background="@drawable/selector_regist_problem_bg"
+        >
+
+        <TextView
+            android:id="@+id/tv_regist_problem_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"
+            android:hint="请选择密保问题二"
+            android:textSize="32px"/>
+
+        <ImageView
+            android:layout_width="18px"
+            android:layout_height="33px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="48px"
+            android:background="@drawable/right_arrow"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:background="#55000000"
+        />
+
+    <EditText
+        android:id="@+id/et_regist_answer_two"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:background="@null"
+        android:hint="密保答案二"
+        android:maxLength="32"
+        android:singleLine="true"
+        android:textSize="30px"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:background="#55000000"
+        />
+
+    <!--问题二-->
+    <RelativeLayout
+        android:id="@+id/rl_regist_problem_three_bg"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="5px"
+        android:background="@drawable/selector_regist_problem_bg"
+        >
+
+        <TextView
+            android:id="@+id/tv_regist_problem_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"
+            android:hint="请选择密保问题二"
+            android:textSize="32px"/>
+
+        <ImageView
+            android:layout_width="18px"
+            android:layout_height="33px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="48px"
+            android:background="@drawable/right_arrow"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:background="#55000000"
+        />
+
+    <EditText
+        android:id="@+id/et_regist_answer_three"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:background="@null"
+        android:hint="密保答案三"
+        android:maxLength="32"
+        android:singleLine="true"
+        android:textSize="30px"/>
+
+</LinearLayout>

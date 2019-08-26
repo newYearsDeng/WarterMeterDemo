@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip" >
+
+    <ImageButton
+        android:id="@+id/delete_drop_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/icon_delect_item"
+         />
+    <TextView
+        android:id="@+id/tv_drop_item"
+        style="?android:attr/dropDownItemStyle"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/delete_drop_item"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textAppearance="?android:attr/textAppearanceSmallInverse" />
+
+</RelativeLayout>

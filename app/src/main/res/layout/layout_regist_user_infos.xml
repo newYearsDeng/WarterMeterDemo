@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="26px"
+        android:paddingTop="35px"
+        android:text="用户信息"
+        android:textColor="#77000000"
+        android:textSize="28px"/>
+
+    <!--用户信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:background="@drawable/shape_task_edit_text_bg"
+        android:orientation="vertical"
+        >
+
+        <!--手机号码-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px">
+
+            <TextView
+                android:id="@+id/tv_regist_phone_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24px"
+                android:text="手机号"
+                android:textColor="#000"
+                android:textSize="30px"/>
+
+            <EditText
+                android:id="@+id/et_regist_phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24px"
+                android:layout_toRightOf="@+id/tv_regist_phone_num"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColor="#000"
+                android:textSize="30px"
+                />
+
+            <Button
+                android:id="@+id/btn_regist_phone_verify"
+                android:layout_width="132px"
+                android:layout_height="59px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24px"
+                android:background="@drawable/seletor_builduser_button_change"
+                android:text="验  证"
+                android:textColor="@drawable/seletor_title_bar_back_text"
+                android:textSize="30px"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="#55000000"
+            />
+
+        <!--客户代码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"
+                android:text="用户编号"
+                android:textColor="#000"
+                android:textSize="30px"
+                />
+
+            <TextView
+                android:id="@+id/tv_regist_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#88000000"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="#55000000"
+            />
+
+        <!--用户姓名-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"
+                android:text="用户姓名"
+                android:textColor="#000"
+                android:textSize="30px"
+                />
+
+            <EditText
+                android:id="@+id/et_regist_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:maxLength="10"
+                android:textColor="#000"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="#55000000"
+            />
+
+        <!--用户地址-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"
+                android:text="用户地址"
+                android:textColor="#000"
+                android:textSize="30px"
+                />
+
+            <EditText
+                android:id="@+id/et_regist_user_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="24px"
+                android:background="@null"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:singleLine="true"
+                android:maxLength="32"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="#55000000"
+            />
+
+        <!--水表编号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"
+                android:text="水表编号"
+                android:textColor="#000"
+                android:textSize="30px"
+                />
+
+            <EditText
+                android:id="@+id/et_regist_meter_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="24px"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:singleLine="true"
+                android:maxLength="32"
+                android:textSize="30px"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <com.northmeter.barcode.core.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/common_title_RL"
+        android:layout_width="fill_parent"
+        android:layout_height="90px"
+        >
+
+        <!--返回-->
+        <LinearLayout
+            android:id="@+id/common_title_TV_left"
+            android:layout_width="140px"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/seletor_capture_back"
+            >
+
+            <ImageView
+                android:layout_width="26px"
+                android:layout_height="40px"
+                android:layout_marginLeft="20px"
+                android:layout_gravity="center"
+                android:background="@drawable/seletor_title_bar_back_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6px"
+                android:textSize="30px"
+                android:text="返回"
+                android:textColor="@drawable/seletor_title_bar_back_text"
+                />
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:id="@+id/common_title_TV_left"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@drawable/ic_back"-->
+            <!--android:clickable="true"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/common_title_TV_right"-->
+            <!--android:layout_width="60dip"-->
+            <!--android:layout_height="40dip"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="5dip"-->
+            <!--android:clickable="true"-->
+            <!--android:textSize="20sp"-->
+            <!--/>-->
+
+        <TextView
+            android:id="@+id/common_title_TV_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:text="二维码扫描"
+            android:textSize="40px"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/status_view"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10px"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="请将二维码置于屏幕中间\n（若光线暗请按音量的增加键）"
+            android:textColor="@color/status_text"
+            android:textSize="30px"/>
+
+        <!--  <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:background="@drawable/common_title_bg"
+             >
+
+             <Button
+                 android:id="@+id/from_gallery"
+                 android:layout_width="100dp"
+                 android:layout_height="40dp"
+                 android:layout_centerInParent="true"
+                 android:layout_marginLeft="5dp"
+                 android:background="@drawable/ic_but_bg"
+                 android:paddingLeft="5dp"
+                 android:paddingRight="5dp"
+                 android:textSize="18sp"
+                 android:text="@string/from_gallery"
+                 android:textColor="@android:color/white" />
+         </RelativeLayout> -->
+    </LinearLayout>
+
+</FrameLayout>

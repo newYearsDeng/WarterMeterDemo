@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_bg_homepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!--设置-->
+    <!--<ImageButton-->
+        <!--android:id="@+id/ibtn_homepage_user"-->
+        <!--android:layout_width="57px"-->
+        <!--android:layout_height="57px"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_marginRight="40px"-->
+        <!--android:layout_marginTop="40px"-->
+        <!--android:background="@drawable/seletor_homepage_setting"-->
+        <!--/>-->
+
+    <!--上传下载-->
+    <FrameLayout
+        android:layout_width="484px"
+        android:layout_height="484px"
+        android:layout_gravity="center"
+        android:layout_marginTop="80px"
+        android:background="@drawable/homepage_up_down_circle"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:background="@drawable/homepage_up_down_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ibtn_homepage_upload"
+                android:layout_width="162px"
+                android:layout_height="162px"
+                android:layout_marginBottom="20px"
+                android:background="@drawable/seletor_homepage_upload"
+                />
+
+            <ImageButton
+                android:id="@+id/ibtn_homepage_download"
+                android:layout_width="162px"
+                android:layout_height="162px"
+                android:layout_marginTop="20px"
+
+                android:background="@drawable/seletor_homepage_download"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!--具体功能-->
+    <RelativeLayout
+        android:layout_width="583px"
+        android:layout_height="419px"
+        android:layout_gravity="center"
+        android:layout_marginTop="90px"
+        android:background="@drawable/homepage_split"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/rl_homepage_left_top"
+            android:layout_width="300px"
+            android:layout_height="200px"
+            >
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/ibtn_homepage_builduser"-->
+                <!--android:layout_width="93px"-->
+                <!--android:layout_height="151px"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_marginBottom="30px"-->
+                <!--android:background="@drawable/seletor_homepage_builduser"-->
+                <!--android:text="立户"-->
+                <!--/>-->
+            <ImageButton
+                android:id="@+id/ibtn_homepage_task"
+                android:layout_width="93px"
+                android:layout_height="151px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/seletor_homepage_task"
+                android:text="任务"
+                />
+            <TextView
+                android:id="@+id/tv_homepage_unread_message"
+                android:layout_width="37px"
+                android:layout_height="37px"
+                android:layout_marginLeft="170px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/homepage_unread_message_icon"
+                android:gravity="center"
+                android:textSize="16px"
+                android:visibility="gone"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_homepage_right_top"
+            android:layout_width="300px"
+            android:layout_height="200px"
+            android:layout_toRightOf="@id/rl_homepage_left_top"
+            >
+
+            <ImageButton
+                android:id="@+id/ibtn_homepage_search"
+                android:layout_width="93px"
+                android:layout_height="151px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/seletor_homepage_search"
+                android:text="查询"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_homepage_left_bottom"
+            android:layout_width="300px"
+            android:layout_height="200px"
+            android:layout_below="@+id/rl_homepage_left_top"
+            >
+
+            <ImageButton
+                android:id="@+id/ibtn_homepage_pay"
+                android:layout_width="93px"
+                android:layout_height="151px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/seletor_homepage_pay"
+                android:text="缴费"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_homepage_right_bottom"
+            android:layout_width="300px"
+            android:layout_height="200px"
+            android:layout_below="@id/rl_homepage_right_top"
+            android:layout_toRightOf="@id/rl_homepage_left_bottom"
+            >
+
+            <ImageButton
+                android:id="@+id/ibtn_homepage_setting"
+                android:layout_width="93px"
+                android:layout_height="151px"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="30px"
+                android:background="@drawable/seletor_homepage_setting"
+                android:text="设置"
+                />
+            <!--<ImageButton-->
+                <!--android:id="@+id/ibtn_homepage_task"-->
+                <!--android:layout_width="93px"-->
+                <!--android:layout_height="151px"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:background="@drawable/seletor_homepage_task"-->
+                <!--android:text="任务"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_homepage_unread_message"-->
+                <!--android:layout_width="37px"-->
+                <!--android:layout_height="37px"-->
+                <!--android:layout_marginLeft="170px"-->
+                <!--android:layout_marginTop="20px"-->
+                <!--android:background="@drawable/homepage_unread_message_icon"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="16px"-->
+                <!--android:visibility="gone"-->
+                <!--android:textColor="#fff"/>-->
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

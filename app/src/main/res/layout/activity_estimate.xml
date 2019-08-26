@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F2F2F2"
+    tools:context="com.northmeter.wartermeterdemo.activity.EstimateActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title_bar"
+        android:orientation="vertical"
+      >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="98px"
+            android:text="参考数据"
+            android:textSize="30px"
+            android:layout_marginLeft="24px"
+            android:gravity="bottom"
+            android:textColor="#908a8a"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:background="#ffffff"
+            android:padding="24px">
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="平均用水量"
+                android:textSize="35px"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/tv_avgValue"
+                android:gravity="center"
+                android:layout_marginLeft="50px"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="35px"
+                android:textColor="#000"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="2px"
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:background="#ffffff"
+            android:padding="24px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="上月用水量"
+                android:textColor="#000"
+                android:textSize="35px"/>
+            <TextView
+                android:id="@+id/tv_lastWater"
+                android:layout_marginLeft="50px"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#000"
+                android:textSize="35px"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:text="预估数据"
+            android:gravity="bottom"
+            android:layout_marginLeft="24px"
+
+            />
+        <LinearLayout
+            android:layout_marginTop="4px"
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+
+            android:background="#ffffff">
+            <TextView
+                android:layout_marginLeft="24px"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="预估用水量"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="35px"/>
+            <EditText
+                android:id="@+id/et_estimate"
+                android:layout_marginLeft="50px"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:hint="请输入数据"
+                android:inputType="number"
+                android:gravity="center|left"
+                android:textColor="#000"
+                android:maxLength="6"
+                android:lines="1"
+                android:background="@null"
+                android:textSize="35px"/>
+        </LinearLayout>
+        <com.northmeter.wartermeterdemo.view.CircularProgressButton
+            android:id="@+id/cpb_submit_estimate"
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="#01B2EB"
+            android:textColor="#fff"
+            android:textSize="40px"
+            android:layout_marginTop="98px"
+            android:layout_marginBottom="32px"
+            app:cpb_cornerRadius="@dimen/dp_size_20"
+            app:cpb_selectorComplete="@drawable/complete_state_selector"
+            app:cpb_selectorError="@drawable/error_state_selector"
+            app:cpb_selectorIdle="@drawable/idle_state_selector"
+            app:cpb_textComplete="成功"
+            app:cpb_textError="提交失败"
+            app:cpb_textIdle="提交" />
+
+    </LinearLayout>
+
+</RelativeLayout>

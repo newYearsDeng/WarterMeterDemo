@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical"
+    tools:context="com.northmeter.wartermeterdemo.activity.PayActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <ImageView
+        android:id="@+id/iv_logo_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60px"
+        android:layout_marginTop="100px"
+        android:src="@drawable/pay_logo" />
+
+    <LinearLayout
+        android:id="@+id/ll_company"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="578px"
+        android:layout_weight="0.3"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <!-- android:background="@drawable/shape_task_edit_text_bg"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:text="收费   单位："
+            android:textColor="#000" />
+
+        <com.northmeter.wartermeterdemo.view.ClearEditText
+            android:id="@+id/et_company_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="30px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="470px"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:text="输入用户号:"
+            android:textColor="#000" />
+
+        <com.northmeter.wartermeterdemo.view.ClearEditText
+            android:id="@+id/et_userNum_pay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="@null"
+            android:drawableLeft="@drawable/shape_rectangle_white"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:singleLine="true"
+            android:textSize="30px" />
+        />
+    </LinearLayout>
+
+    <com.northmeter.wartermeterdemo.view.CircularProgressButton
+        android:id="@+id/btn_query_pay"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="330px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:background="#01B2EB"
+        android:textColor="#fff"
+        android:textSize="40px"
+        app:cpb_cornerRadius="@dimen/dp_size_20"
+        app:cpb_selectorComplete="@drawable/complete_state_selector"
+        app:cpb_selectorError="@drawable/error_state_selector"
+        app:cpb_selectorIdle="@drawable/idle_state_selector"
+        app:cpb_textComplete="成功"
+        app:cpb_textError="查询失败"
+        app:cpb_textIdle="查询" />
+</RelativeLayout>

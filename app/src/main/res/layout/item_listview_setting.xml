@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/dp_size_50"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/iv_item_listView_setting"
+        android:layout_width="44px"
+        android:layout_height="44px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="34px"
+        android:src="@drawable/pws_setting" />
+    <TextView
+        android:id="@+id/tv_item_listView_setting"
+        style="@style/setting_text2_style"
+        android:layout_width="wrap_content"
+        android:layout_height="110px"
+        android:layout_marginLeft="26px"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_item_listView_setting"
+        android:text="密码修改"
+        android:textColor="#000"/>
+    <ImageView
+        android:layout_width="20px"
+        android:layout_height="35px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="34px"
+        android:src="@drawable/item_search_message" />
+</com.zhy.autolayout.AutoRelativeLayout>

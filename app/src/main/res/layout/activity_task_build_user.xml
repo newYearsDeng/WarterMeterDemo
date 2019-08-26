@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#efefef"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <!--用户信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="35px"
+        android:background="@drawable/shape_task_edit_text_bg"
+        android:orientation="vertical"
+        >
+
+        <!--客户代码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"
+                android:text="用户编号"
+                android:textColor="#000"
+                android:textSize="30px"
+                />
+
+            <TextView
+                android:id="@+id/tv_task_build_user_curstomer_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#88000000"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="#55000000"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"
+                android:text="手机号码"
+                android:textColor="#000"
+                android:textSize="30px"
+                />
+
+            <EditText
+                android:id="@+id/et_task_builder_user_customer_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ellipsize="end"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="#55000000"
+            />
+
+
+        <!--用户姓名-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"
+                android:text="用户姓名"
+                android:textColor="#000"
+                android:textSize="30px"
+                />
+
+            <EditText
+                android:id="@+id/et_task_builder_user_customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ellipsize="end"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="#55000000"
+            />
+
+        <!--用户地址-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"
+                android:ellipsize="end"
+                android:text="用户地址"
+                android:textColor="#000"
+                android:textSize="30px"
+                />
+
+            <EditText
+                android:id="@+id/et_task_builder_user_customer_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="#55000000"
+            />
+
+        <!--水表编号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"
+                android:text="水表编号"
+                android:textColor="#000"
+                android:textSize="30px"
+                />
+
+            <EditText
+                android:id="@+id/et_task_builder_user_meter_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ellipsize="end"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textSize="30px"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--拍照-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="20px">
+
+        <!--<com.northmeter.wartermeterdemo.view.CannotSlideRecyclerview-->
+            <!--android:layout_marginLeft="10px"-->
+            <!--android:id="@+id/rv_build_user_photo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+
+        <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="10px"
+        android:id="@+id/rv_build_user_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_build_user_take_photo"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:background="@drawable/selector_build_user_take_photo"
+            />
+    </LinearLayout>
+
+    <com.northmeter.wartermeterdemo.view.CircularProgressButton
+        android:id="@+id/btn_task_build_user_upload"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="30px"
+        android:background="#01B2EB"
+        android:textColor="#fff"
+        android:textSize="40px"
+        app:cpb_cornerRadius="@dimen/dp_size_20"
+        app:cpb_selectorComplete="@drawable/complete_state_selector"
+        app:cpb_selectorError="@drawable/error_state_selector"
+        app:cpb_selectorIdle="@drawable/idle_state_selector"
+        app:cpb_textComplete="完成"
+        app:cpb_textError="重新上传"
+        app:cpb_textIdle="上传"/>
+</LinearLayout>

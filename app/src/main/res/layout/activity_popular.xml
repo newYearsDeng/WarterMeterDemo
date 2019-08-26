@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_popular_bg"
+    android:fitsSystemWindows="true"
+    tools:context="com.northmeter.wartermeterdemo.activity.PopularActivity"
+    android:background="@drawable/homepage_bg">
+    <RelativeLayout
+        android:layout_width="560px"
+        android:layout_height="560px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150px"
+        android:background="@drawable/homepage_up_down_circle">
+        <ImageButton
+            android:id="@+id/ib_takePhoto_popular"
+            android:layout_width="468px"
+            android:layout_height="468px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/select_popular_photo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="176px"
+        android:layout_marginLeft="80px"
+        android:layout_marginRight="80px">
+
+        <ImageButton
+            android:id="@+id/ib_search_popular"
+            android:layout_width="168px"
+            android:layout_height="168px"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/select_popular_search" />
+
+        <ImageButton
+            android:id="@+id/ib_search_setting"
+            android:layout_width="168px"
+            android:layout_height="168px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/select_popular_setting" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="55dp"
+                android:padding="10dp">
+
+    <CheckBox
+        android:id="@+id/cb_item_task_meter_choose_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_tasks_name"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@+id/cb_item_task_meter_choose_delete"
+        android:background="@drawable/icon_tasks"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginRight="7dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_tasks_name"
+        >
+
+        <TextView
+            android:id="@+id/tv_item_task_meter_address_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户号/地址"
+            android:textColor="#000"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_item_task_meter_specific"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_task_meter_address_id"
+            android:layout_marginTop="5dp"
+            android:text="需要维修的具体事项"
+            android:textColor="#77000000"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/iv_item_task_meter_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_item_task_meter_specific"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

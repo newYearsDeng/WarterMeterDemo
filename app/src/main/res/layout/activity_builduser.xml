@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EFEFEF"
+    >
+
+    <include layout="@layout/title_bar"/>
+
+    <!--用户信息-->
+    <include layout="@layout/user_message"/>
+
+
+    <!--底部按钮-->
+    <LinearLayout
+        android:id="@+id/ll_btn_builduser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100px"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/btn_builderuser_change"
+            android:layout_width="wrap_content"
+            android:layout_height="90px"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@drawable/seletor_builduser_button_change"
+            android:text="修    改"
+            android:textColor="#fff"
+            android:textSize="38px"/>
+
+        <Button
+            android:id="@+id/btn_builderuser_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="90px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@drawable/seletor_builduser_button_upload"
+            android:text="上    传"
+            android:textColor="#fff"
+            android:textSize="38px"/>
+    </LinearLayout>
+</RelativeLayout>
